@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="ul">
+            <ul>
+                <li class="borda_esquerda">
+                    <p>Inicio</p>
+                </li>
+                <li>
+                    <p>Destinos</p>
+                </li>
+                <li>
+                    <p>Contato</p>
+                </li>
+                <li class="borda_direita">
+                    <p>Sobre</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <h1 class="title_section1" data-aos="fade-right"  data-aos-duration="1000">A VIDA É CURTA PARA SE VIVER DE QUALQUER JEITO !</h1>
+        <section>
+            <div class="container" data-aos="fade-left"  data-aos-duration="1000">
+                <div class="inputs">
+                    <div class="email">
+                        <p>Digite seu melhor email:</p>
+                        <input type="email" name="" id="email" placeholder="email">
+                    </div>
+
+                    <div class="destino">
+                        <p>Informe o destino desejado:</p>
+                        <input type="text" name="" placeholder="destino" id="destino">
+                    </div>
+
+                    <div class="ida">
+                        <p>Digite sua data de ida:</p>
+                        <input type="date" name="" placeholder="data de ida" id="ida">
+                    </div>
+
+                    <div class="volta">
+                        <p>Digite uma data para voltar:</p>
+                        <input type="date" name="" placeholder="data de volta" id="volta">
+                    </div>
+
+                    <div class="button">
+                        <button onclick="saveall()">Buscar</button>
+                    </div>
+                </div>
+
+                <div class="img"
+                    style=" background-image: url('img/voce-sabia-que-viajar-pode-ajudar-a-emagrecer-Magnus-Personal-Trainer.webp');">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="module parallax parallax_1">
+            <h1>Destinos Internacionais</h1>
+        </section>
+
+        <section class="principaisdestinos">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/dubai.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Dubai</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/londres.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Londres</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="img/new_york.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>New York</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="module parallax parallax_2">
+            <h1>Destinos Nacionais</h1>
+        </section>
+
+        <section class="principais_destinos_brasil">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gramado-fotor-202307092252.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ouro_preto-fotor-2023070922549.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pelourinho-salvador-fotor-202307092215.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/rio-de-janeiro-fotor-2023070922641.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="opinioes">
+
+            <h1 data-aos="fade-up"  data-aos-duration="1000">Opiniões</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-down"  data-aos-duration="1000">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/pessoa_sorrindo_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pedro</h5>
+                            <p class="card-text">Melhor site de viagens do Brasil, atendimento muito acima da media,
+                                muito satifeito com tudo.</p>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/pessoa_sorindo_2.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ana</h5>
+                            <p class="card-text">Estou realizando todos os meus sonhos por aqui, melhor recomendacao que
+                                ja recebi em toda a minha vida.</p>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/pessoa_sorrindo_3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Stephany</h5>
+                            <p class="card-text">Primeira de muitas viagens por aqui, melhor site de viagens do Brasil.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reserva" data-aos="fade-right"  data-aos-duration="1000">
+            <h1>Saiba todos os destinos disponiveis..</h1>
+
+            <button type="button" class="btn btn-primary btn-light">Saber mais destinos</button>
+        </section>
+
+        <h1 class="ouv" data-aos="fade-left"  data-aos-duration="1000">Ouvidoria</h1>
+
+        <section class="ouvidoria" data-aos="fade-up"  data-aos-duration="1000">
+
+            <div class="info">
+                <ul>
+                    <li>Para duvidas sobre bagagens</li>
+                    <li>Para enviar seu curriculo</li>
+                    <li>Para duvidas sobre reserva</li>
+                    <li>Para mais Informações</li>
+                </ul>
+            </div>
+
+            <div class="telefone">
+                <i class="bi bi-caret-right-fill"></i>
+                <i class="bi bi-telephone"></i>
+                <h1>(61) 4042-6565</h1>
+            </div>
+
+        </section>
+
+        <h1 class="lc">Local</h1>
+        <section class="local">
+         
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3838.683393771135!2d-48.07229299062573!3d-15.820639684760106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x935a3391b366fc47%3A0x88c16b784a3ad98f!2sSt.%20C%20Norte%20%C3%81rea%20Especial%202%20Senai%20Taguatinga%20-%20Taguatinga%2C%20Bras%C3%ADlia%20-%20DF%2C%2072115-700!3m2!1d-15.8206397!2d-48.0697127!5e0!3m2!1sen!2sbr!4v1688968981133!5m2!1sen!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
