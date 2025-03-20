@@ -1,0 +1,241 @@
+/* @font-face {
+    font-family: fonte-one-piece;
+    src: url("fonte/one-piece.ttf");
+  }
+
+  @font-face {
+    font-family: fonte-one-piece-2;
+    src: url("fonte/one-piece-2.ttf");
+  } */
+
+  html{
+    scroll-behavior: smooth;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+:root{
+    --fonte: 'Roboto', sans-serif;
+}
+
+  body {
+    background-color: #0ab8f8;
+  }
+
+  section.cards{
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+  }
+  .card:hover .descricao:hover {
+    opacity: 1;
+    height: 70%;
+  }
+
+  .troca:hover{
+    opacity: 1;
+    height: 70%;
+  }
+
+
+
+  .descricao {
+    position: absolute;
+    height: 0;
+    background-color: aliceblue;
+    opacity: 0;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    top: 0;
+  }
+
+  p{
+    font-family: fonte-one-piece-2;
+    font-weight: bolder;
+  }
+
+  section.cards img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: fonte-one-piece;
+  }
+
+  /* section.parallax-1 img{
+    width: 100%;
+    height: 100%;
+  
+  } */
+
+
+  section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+
+  .parallax-1::before{
+    content: gfdsgfdgsgsfgfdsgfdgfgsdgsfgsd;
+  }
+
+  .parallax-1::after, .parallax-2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+  }
+
+  .parallax-1 h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .parallax-2{
+    background-image: url("img/one-piece-2.jpg");
+  }
+
+  .parallax-1{
+    background-image: url("img/piratas.jpg");
+  }
+
+  .content, .content-2{
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+    /* background-color: #ede570; */
+    border-radius: 5px;
+  }
+
+  .content h1{
+    margin-bottom: 1rem;
+  }
+
+  .content img{
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+   
+  }
+
+  .figuras{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 0 black;
+  }
+
+  .figuras h1{
+    font-size: 2rem;
+    color: black;
+    
+  }
+
+  .container-figuras {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+
+  .content-2{
+    background-color: white;
+    height: 100vh;
+    position: relative;
+  }
+
+  .content-2 .textos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .content-2 h1{
+    text-align: center;
+    color: #000;
+    z-index: 10;
+  }
+
+  .content-2 p:nth-child(1){
+     width: 50vw;
+     text-align: justify;
+     float: right;
+  }
+
+  .content-2 p:nth-child(1)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: blue;
+    display: block;
+   
+  }
+
+  .content-2 p:nth-child(2){
+    width: 50vw;
+    text-align: justify;
+    align-self: flex-start;
+  }
+
+  .content-2 p:nth-child(2)::before{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: blue;
+    display: block;
+    margin-top: 100px;
+
+  }
+  .content-2 img#luffy{
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+  }
+
+  .content-2 img#zoro{
+    width: 40vw;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 5vh;
+    right: 0;
+  } 
+
+  #historia,#almirantes{
+    transition: 0.5s ease-in;
+  }
