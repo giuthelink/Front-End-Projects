@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border box;
+    padding: 0;
+
+}
+
+body{
+   background: linear-gradient(90deg, #3f3bff,#ff7005);
+   margin: 0;
+   color: #FFFFFF;    
+   font-family: "Lato", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  
+}
+
+
+#calc {
+    color: #FFFFFF;
+    background-color: #2E2F3E;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    /*this function will align the words at the right end */
+    border-bottom: 3px solid white;
+    height: 116px;
+}
+
+#currentOperand {
+    height: 44px;
+    font-size: 43px;
+    margin-right: 12px;
+}
+
+#previousOperand {
+    font-size: 35px;
+    margin-right: 18px;
+    color: #bbbbbb;
+}
+
+.font {
+    width: 75px;
+    height: 45px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+    /* font-size: 2.5vw; */
+    text-shadow: 0 0 3px #ffffff, 0 0 1px #ffffff;
+}
+
+
+.container {
+    border-radius: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 375px;
+    /* border: 1px solid black; */
+    /* height: 70vh; */
+    /* gap: 4vh; */
+    margin: 0 auto;
+    margin-top: 50px;
+    /* height: 100%; */
+    /* background: linear-gradient(to right top, rgb(0,0,215), rgb(0,0,150)); */
+    background-color: #1E1F29;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.5);
+}
+
+
+.buttons {
+    /* border: 1px solid black; */
+    gap: 17.5px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #4a88f7; */
+}
+
+.buttons button {
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    background-color: #3B3C4F;
+    color: #FFFFFF;
+
+    transition-duration: 180ms;
+    transition-timing-function: linear;
+}
+
+.buttons button:hover {
+    background-color: rgb(218, 224, 234) ;
+    color: black;
+}
+
+
+.lin {
+    display: flex;
+    justify-content: center;
+    gap: 11.5px;
+    margin-top: 6.8px;
+}
+
+.lin1 {
+    margin-top: 17px;
+}
+
+.lin5 .col3,
+.lin1 .col1 {
+    width: 165px;
+}
+
+.operator {
+
+    background-color: #3A8DFF !important;
+}
+
+.erase,
+.equal {
+    color: #4a88f7;
+}
+
+.lin5 .col3 {
+    background-color: #00DFA2 !important;
+    font-size: 38px;
+}
+
+.allClear, .backspace {
+    background-color: #FF5C5C !important;
+}
+
+
