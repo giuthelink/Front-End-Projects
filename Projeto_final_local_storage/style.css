@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main,
+header {
+    border: 1px solid rgb(175 205 242);
+    background-color: rgb(175 205 242);
+}
+
+.ul {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 60vw;
+    margin-top: 6vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.ul ul {
+    margin: 0 auto;
+    border-radius: 4vw;
+    height: 6vh;
+    list-style: none;
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.ul ul li {
+    background-color: rgb(175 205 242);
+    height: 5.5vh;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    text-align: center;
+    width: 15vw;
+}
+
+.ul ul li p {
+    margin-top: 0.6vh;
+}
+
+.ul ul li:hover {
+    cursor: pointer;
+    background-color: #74828f;
+}
+
+.borda_esquerda {
+    width: 19vw;
+    -webkit-border-top-left-radius: 2vw;
+    -webkit-border-bottom-left-radius: 2vw;
+}
+
+.borda_direita {
+    -webkit-border-top-right-radius: 2vw;
+    -webkit-border-bottom-right-radius: 2vw;
+}
+
+section {
+    margin: 0 auto;
+    width: 65vw;
+}
+
+.title_section1 {
+    color: #3dc1c3;
+    margin-top: 12vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    box-shadow: 10px 5px 5px 5px black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-top-left-radius: 2vw;
+    -webkit-border-bottom-left-radius: 2vw;
+    -webkit-border-top-right-radius: 2vw;
+    -webkit-border-bottom-right-radius: 2vw;
+}
+
+.container p {
+    font-size: 1.2rem;
+}
+
+.container .img {
+    width: 70%;
+    max-width: 450px;
+    margin-right: -1vw;
+    height: 45vw;
+    max-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    -webkit-border-top-right-radius: 2vw;
+    -webkit-border-bottom-right-radius: 2vw;
+}
+
+.inputs {
+    margin-right: -3vw;
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    height: 55vh;
+    /* justify-content: center; */
+    text-align: center;
+    gap: 4vh;
+    margin-left: 6vw;
+}
+
+.inputs input {
+    border-radius: 1.5vw;
+    padding: 0.9vh;
+    margin-top: -1vh;
+    width: 23vw;
+}
+
+.inputs button {
+    padding: 0.7vh;
+    border-radius: 1.5vw;
+    width: 10vw;
+    border-color: #3498db;
+    color: black;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.inputs button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+#carouselExampleDark {
+    margin-top: 15vh;
+    color: #ffff;
+}
+
+#carouselExampleDark h5 {
+    color: #ffff;
+    font-size: 2.5rem;
+}
+
+section.module.parallax {
+    margin-top: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.parallax_1 {
+    background-image: url("img/parallax2.jpg");
+}
+
+.parallax_2 {
+    background-image: url("img/parallax.png");
+    margin-bottom: 8vh;
+}
+
+.parallax h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.opinioes h1 {
+    color: #ffff;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.opinioes {
+    margin-top: 15vh;
+    position: relative;
+    z-index: 0;
+}
+
+.reserva {
+    margin-top: 6vh;
+    text-align: center;
+    color: #ffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.reserva button {
+    width: 25vw;
+    height: 10vh;
+    font-size: 1.6rem;
+    color: #3dc1c3;
+}
+
+.ouv {
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.ouvidoria {
+    box-shadow: 10px 5px 5px black;
+    border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    font-size: 2rem;
+}
+
+.ouvidoria i {
+    font-size: 4rem;
+    color: #3dc1c3;
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.local {
+    justify-content: center;
+    display: flex;
+    margin-top: 8vh;
+    width: 100vw;
+}
+
+.lc {
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+@media screen and (max-width: 1450px) {
+
+    .container {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        gap: 11vw;
+    }
+
+    .inputs {
+        gap: 3vh;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 11vw;
+    }
+
+    .container .img {
+        width: 65vw;
+        height: 60vw;
+        max-width: 100vw;
+        border-radius: 1.7rem;
+        max-height: 100vw;
+    }
+
+    .inputs {
+
+        gap: 3vh;
+        width: 60vw;
+    }
+
+    section {
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .inputs button {
+        width: 20vw;
+    }
+
+    .inputs input {
+        width: 45vw;
+    }
+
+    .ul {
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        width: 90vw;
+        margin-top: 6vh;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+    }
+
+    .ul ul {
+        margin: 0 auto;
+        border-radius: 4vw;
+        height: 6vh;
+        list-style: none;
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .ul ul li {
+        background-color: rgb(175 205 242);
+        height: 5.5vh;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 25vw;
+    }
+
+    .ouvidoria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reserva button{
+        width: 50vw;
+    }
+}
